@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merak Butonu: Türkiye'nin Gizli Gerçekleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="info-box">
+            <h1 id="info-text">Türkiye'nin en gizli bilgileri tek tık uzağında.</h1>
+            <p id="sub-text" class="fade-in-2s">Merak Butonuna bas ve anlık gerçeği öğren!</p>
+        </div>
+
+        <button id="merak-button">
+            KOCAMAN <br> MERAK BUTONU
+        </button>
+
+        <div class="footer-note">
+            <p>Süper Merak Paketi için Tıkla | Reklam Alanı</p>
+        </div>
+    </div>
+
+<style>
+/* Genel Stil Reset ve Font */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Koyu Tema */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 90%;
+    height: 90vh; /* Ekranın büyük kısmını kapla */
+}
+
+/* Bilgi Kutusu Stilleri */
+#info-box {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#info-text {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Duyarlı Font Boyutu */
+    font-weight: 800;
+    line-height: 1.3;
+    color: #00ff99; /* Neon Yeşil - Dikkat Çekici */
+    transition: all 0.5s ease-in-out;
+}
+
+#sub-text {
+    margin-top: 10px;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: #a0a0a0;
+}
+
+/* Buton Stilleri */
+#merak-button {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Daire Buton */
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Çarpıcı Kırmızı/Turuncu Gradient */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border: 10px solid #ff0055;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 65, 108, 0.8);
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#merak-button:active {
+    /* Basılma Efekti */
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+}
+
+/* Alt Bilgi */
+.footer-note {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+/* Basınca Bilgiyi Temizleme Animasyonu (JS ile eklenecek) */
+.info-clear {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+</style>
+<script src="script.js"></script>
+    
+</body>
+</html>
